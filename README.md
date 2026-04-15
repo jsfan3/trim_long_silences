@@ -1,4 +1,4 @@
-# trim_long_silences
+# Trim long silences
 
 A Bash script for Linux that shortens long silent sections in an MP4 file while cutting audio and video at the exact same points.
 
@@ -31,7 +31,7 @@ sudo apt install ffmpeg
 ## Usage
 
 ```bash
-./trim_long_silences_fixed.sh input.mp4 output.mp4 [max_silence] [noise_threshold]
+./trim_long_silences.sh input.mp4 output.mp4 [max_silence] [noise_threshold]
 ```
 
 ## Examples
@@ -39,19 +39,19 @@ sudo apt install ffmpeg
 Default behavior:
 
 ```bash
-./trim_long_silences_fixed.sh input.mp4 output.mp4
+./trim_long_silences.sh input.mp4 output.mp4
 ```
 
 Keep at most 2 seconds of each long silence, with a custom detection threshold:
 
 ```bash
-./trim_long_silences_fixed.sh input.mp4 output.mp4 2 -35dB
+./trim_long_silences.sh input.mp4 output.mp4 2 -35dB
 ```
 
 Speed up encoding on long videos:
 
 ```bash
-VIDEO_PRESET=ultrafast ./trim_long_silences_fixed.sh input.mp4 output.mp4
+VIDEO_PRESET=ultrafast ./trim_long_silences.sh input.mp4 output.mp4
 ```
 
 ## Arguments
