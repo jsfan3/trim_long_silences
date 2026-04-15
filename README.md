@@ -1,10 +1,10 @@
-by [Francesco Galgani](https://www.informatica-libera.net/), license [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
-
 # trim_long_silences
 
 A Bash script for Linux that shortens long silent sections in an MP4 file while cutting audio and video at the exact same points.
 
 If a silence is longer than the configured threshold, the script keeps only the first part of that silence and removes the rest. This means the output video is actually shorter than the input, with both audio and video trimmed consistently.
+
+by [Francesco Galgani](https://www.informatica-libera.net/), license [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Features
 
